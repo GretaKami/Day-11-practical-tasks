@@ -33,3 +33,16 @@ for (int row= 0; row < array2.GetLength(0); row++)
     }
     Console.WriteLine();
 }
+
+int sum = 0;
+do
+{
+   Console.WriteLine("Please enter the number");
+string input = Console.ReadLine();
+int.TryParse(input, out int inputNumber); 
+    sum += inputNumber;
+    Console.WriteLine("sum = {0}", sum);
+    if (sum>100)
+    break;
+ }
+while (sum <= 100);
